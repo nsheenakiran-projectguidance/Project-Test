@@ -1,10 +1,9 @@
-def main():
-    try:
-        n = int(input().strip())
-        print("even" if n % 2 == 0 else "odd")
-    except Exception:
-        pass
-
+def odd_or_even(n):
+    return "even" if n % 2 == 0 else "odd"
 
 if __name__ == "__main__":
-    main()
+    try:
+        value = int(input().strip())
+        print(odd_or_even(value))
+    except Exception:
+        print("Please enter a valid integer.")
